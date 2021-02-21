@@ -10,6 +10,7 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import ProjectPreviewGrid from '../components/project-preview-grid'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
+import SocialLinks from '../components/SocialLinks'
 
 export const query = graphql`
   query IndexPageQuery {
@@ -90,6 +91,7 @@ const IndexPage = props => {
       <Container>
         <h1>{site.title}</h1>
         <p>{site.subtitle}</p>
+        <SocialLinks />
         {projectNodes && (
           <ProjectPreviewGrid
             title='Latest projects'

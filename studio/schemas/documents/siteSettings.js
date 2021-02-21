@@ -1,3 +1,5 @@
+import social from "./social";
+
 export default {
   name: 'siteSettings',
   type: 'document',
@@ -41,6 +43,14 @@ export default {
       description: 'Publish an author and set a reference to them here.',
       title: 'Author',
       to: [{type: 'person'}]
+    },
+    {
+      title: 'Social Links',
+      name: 'socialLinks',
+      // creates an array of objects with 
+      // the shape we described in social.js
+      type: 'array',
+      of: [{type: 'social'}]
     }
   ]
 }

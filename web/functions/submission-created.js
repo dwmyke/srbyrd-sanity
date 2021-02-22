@@ -1,3 +1,12 @@
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV || 'development'}`
+  })
+  
+  const clientConfig = require('./client-config')
+  const token = process.env.SANITY_READ_TOKEN
+  
+  const isProd = process.env.NODE_ENV === 'production'
+
 exports.handler = async function (event, context, callback) {
     // Pulling out the payload from the body
     const { payload } = JSON.parse(event.body)

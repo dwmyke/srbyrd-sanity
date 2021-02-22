@@ -16,6 +16,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@sanity/block-content-to-react": "^2.0.7",
+    "@sanity/client": "^2.2.6",
     "@sanity/image-url": "^0.140.22",
     "babel-plugin-styled-components": "^1.12.0",
     "date-fns": "^1.30.1",

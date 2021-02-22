@@ -1,11 +1,10 @@
-require('dotenv').config({
-    path: `.env.${process.env.NODE_ENV || 'development'}`
-  })
-  
-  const clientConfig = require('../client-config')
-  const token = process.env.SANITY_READ_TOKEN
-  
-  const isProd = process.env.NODE_ENV === 'production'
+const sanityClient = require("@sanity/client")
+const client = sanityClient({
+  projectId: process.env.GATSBY_SANITY_PROJECT_ID,
+  dataset: process.env.GATSBY_SANITY_PROJECT_DATASET,
+  token: process.env.GATSBY_SANITY_TOKEN,
+  useCDN: false,
+})
 
 exports.handler = async function (event, context, callback) {
     // Pulling out the payload from the body

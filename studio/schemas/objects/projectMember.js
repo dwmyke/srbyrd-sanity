@@ -17,10 +17,10 @@ export default {
       options: {
         layout: 'radio',
         list: [
-          {title: 'Designer', value: 'designer'},
-          {title: 'Developer', value: 'developer'},
-          {title: 'Editor', value: 'editor'},
-          {title: 'Manager', value: 'manager'}
+          {title: 'Actor', value: 'actor'},
+          {title: 'Producer', value: 'producer'},
+          {title: 'Writer', value: 'writer'},
+          {title: 'Crew', value: 'crew'}
         ]
       }
     }

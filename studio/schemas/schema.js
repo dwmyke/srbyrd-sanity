@@ -10,6 +10,7 @@ import person from './documents/person'
 import sampleProject from './documents/sampleProject'
 import siteSettings from './documents/siteSettings'
 import social from './documents/social'
+import contact from './documents/contact'
 
 // Object types
 import bioPortableText from './objects/bioPortableText'
@@ -40,6 +41,7 @@ export default createSchema({
     person,
     sampleProject,
     siteSettings,
-    social
+    social,
+    contact
   ])
 })
